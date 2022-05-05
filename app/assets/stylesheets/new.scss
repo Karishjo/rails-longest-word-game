@@ -1,0 +1,43 @@
+// Place all the styles related to the new controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.contain{
+ width: 900px;
+ display: flex;
+ flex-direction: column;
+ align-content: space-around;
+}
+.grid{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0px;
+}
+.grid p{
+color: white;
+font-family: Tahoma;
+font-weight: bold;
+align-items: center;
+}
+
+.letter-grid{
+  width: 36px;
+  height: auto;
+  border-color: 2px solid #2980b9;
+  background-color: #3498dc;
+  border-radius: 3px;
+  padding: 8px 8px;
+  margin: 12px 12px;
+}
+.answer{
+  margin: 10px 8px;
+}
+.answer label{
+  margin-bottom: 10px;
+}
+a {
+  color: #f8f9fa;
+  &:hover {
+    color: #c2c5c7;
+  }
+}

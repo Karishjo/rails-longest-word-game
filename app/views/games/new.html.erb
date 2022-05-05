@@ -1,0 +1,23 @@
+ <%  grid = []
+    until grid.size == 10
+      letter = ("A".."Z").to_a.sample
+      grid << letter
+    end
+    grid
+%>
+<div class="contain">
+  <div class="grid">
+    <% grid.each do |letter| %>
+      <p class="letter-grid"><%=letter.upcase%></p>
+    <% end %>
+  </div>
+  <div class="answer">
+    <form action="/new">
+      <label>What is your longest word?</label>
+      <div class="input-group mb-3">
+        <input class = "new_game" type="text" name="game_grid">
+        <button class="btn btn-light" type="submit">Play</button>
+      </div>
+    </form>
+  </div>
+</div>
